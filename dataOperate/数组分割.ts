@@ -11,8 +11,8 @@
  * @param {number} chunkCount
  * @return {Array<Array>}
  */
-const chunkArrayForGroup = (arr = [], chunkCount) => {
-  const chunks = [];
+const chunkArrayForGroup = (arr: Array<any>, chunkCount: number) => {
+  const chunks: any[] = [];
   while (arr.length) {
     const chunkSize = Math.ceil(arr.length / chunkCount--);
     const chunk = arr.slice(0, chunkSize);
@@ -28,7 +28,7 @@ const chunkArrayForGroup = (arr = [], chunkCount) => {
  * @return {Array<Array>}
  */
 function chunkArrayForLength(arr: Array<any>, len: number) {
-  var newArr = [];
+  var newArr: any[] = [];
   for (var i = 0; i < arr.length; i += len) {
     newArr.push(arr.slice(i, i + len));
   }
